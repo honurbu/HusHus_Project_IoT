@@ -60,6 +60,9 @@ namespace IoTExampleFirebase
             double oran = (100 * (diff)) / double.Parse(values1);
             textBox4.Text = oran.ToString();
 
+            istemci_firebase.Set("Fark",diff);
+            istemci_firebase.Set("Oran",oran);
+
 
             if (diff<0)
             {
